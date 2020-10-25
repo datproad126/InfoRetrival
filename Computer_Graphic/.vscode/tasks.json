@@ -1,0 +1,68 @@
+{
+  "tasks": [
+    //  {
+    //    "type": "shell",
+    //    "label": "C/C++: g++.exe build active file",
+    //    "command": "C:\\MinGW64\\bin\\g++.exe",
+    //    "args": [
+    //      "-g",
+    //      "${file}",
+    //      "-o",
+    //      "${fileDirname}\\output\\${fileBasenameNoExtension}.exe"
+    //    ],
+    //    "options": {
+    //      "cwd": "C:\\MinGW64\\bin"
+    //    }
+    //  },
+    //  {
+    //    "type": "shell",
+    //    "label": "C/C++: g++ build & run active file",
+    //    "command": "C:\\MinGW64\\bin\\g++.exe",
+    //    "args": [
+    //      "${file}",
+    //      "-o",
+    //      "${fileDirname}\\output\\${fileBasenameNoExtension}.exe"
+    //    ],
+    //    "options": {
+    //      "cwd": "C:\\MinGW64\\bin"
+    //    }
+    //  },
+    {
+      "type": "shell",
+      "label": "C/C++: g++.exe build active file",
+      "command": "C:\\MinGW64\\bin\\g++.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\output\\${fileBasenameNoExtension}",
+        "-lopengl32",
+        "-lglew32",
+        "-lfreeglut",
+        "-lglu32"
+      ],
+      "options": {
+        "cwd": "C:\\MinGW64\\bin"
+      }
+    },
+    {
+      "type": "shell",
+      "label": "C/C++: g++ build & run active file",
+      "command": "C:\\MinGW64\\bin\\g++.exe",
+      "args": [
+        "-v",
+        "${file}",
+        "-o",
+        "${fileDirname}\\output\\${fileBasenameNoExtension}",
+        "-lopengl32",
+        "-lglew32",
+        "-lfreeglut",
+        "-lglu32"
+      ],
+      "options": {
+        "cwd": "C:\\MinGW64\\bin"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
